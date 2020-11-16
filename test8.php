@@ -242,22 +242,8 @@ $app->isEqualToZero=fn()=>$app::isEqualToZero();
 
 $z = $app->isEqualToZero;
 var_dump($z(12));
-//$z = $app->class;
-//var_dump($z);
-function are〽all〽of〽type׀($xs){
 
-}
-// take n x => case (n,x) of 
-// (0, x) -> [0 x]
 
-//function case_of_(array $args,)
-
-// selector
-/*
-$p->def_cond_fn_('sum',$p::isListVoid(),fn() => 0);
- $p->def_cond_fn_('sum',$p::isHeadTail(),fn($x,$xs) => $x + $p::solve('sum',$xs) );
- 
-*/
 PFunc::def('mul', fn()=>1,[]);
 PFunc::def('mul',fn($x,$xs)=>$x*PFunc::mul($xs),PFunc::isHeadTail());
 echo PFunc::mul([1,2,3]),"\n";
